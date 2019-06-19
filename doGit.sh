@@ -1,7 +1,6 @@
 #!/bin/bash
 mkdir test
 cd test
-git login 
 git clone https://github.com/chilanti/homebrew-testmcformula.git
 git checkout -b testrelease
 cp ../testfile.txt .
