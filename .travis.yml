@@ -1,7 +1,7 @@
 language: bash
 
 script:
-  - doGit.sh
+  - ./doGit.sh
 
 env:
   global:
