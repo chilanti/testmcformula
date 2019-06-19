@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+env
 mkdir test
 cd test
 git clone https://github.com/chilanti/homebrew-testmcformula.git
