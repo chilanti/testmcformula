@@ -4,7 +4,7 @@ env
 #git remote remove origin
 git config --global user.email "travis@travis-ci.org"
 git config --global user.name "Travis CI"
-git remove remote origin
+git remote remove origin
 git remote add origin https://${GH_TOKEN}@github.com/chilanti/homebrew-testmcformula.git
 #git clone https://github.com/chilanti/homebrew-testmcformula.git
 git checkout -b test${TRAVIS_BUILD_NUMBER}
