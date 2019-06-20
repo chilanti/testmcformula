@@ -4,7 +4,7 @@ env
 mkdir ./mctest
 cd ./mctest
 git clone https://github.com/chilanti/homebrew-testmcformula.git
-cd homebrew-testformula
+cd homebrew-testmcformula
 git checkout -b test${TRAVIS_BUILD_NUMBER}
 cp ../../testfile.txt .
 echo something >> testfile.txt
