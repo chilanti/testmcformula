@@ -1,14 +1,12 @@
 #!/bin/bash
 set -e
 env
-#git remote remove origin
-git config --global user.email "travis@travis-ci.org"
-git config --global user.name "Travis CI"
-
-
-#git clone https://github.com/chilanti/homebrew-testmcformula.git
+mkdir ./mctest
+cd ./mctest
+git clone https://github.com/chilanti/homebrew-testmcformula.git
+cd homebrew-testformula
 git checkout -b test${TRAVIS_BUILD_NUMBER}
-#cp ../testfile.txt .
+cp ../../testfile.txt .
 echo something >> testfile.txt
 git add testfile.txt
 git commit -m "Travis build: $TRAVIS_BUILD_NUMBER"
