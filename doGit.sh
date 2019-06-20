@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 env
-mkdir ./mctest
-cd mctest
+mkdir /mctest
+cd /mctest
 git remote remove origin
 git remote add origin https://${GH_TOKEN}@github.com/chilanti/homebrew-testmcformula.git
 git clone https://github.com/chilanti/homebrew-testmcformula.git
